@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> SmileH store</title>
+        <link rel="stylesheet" type="text/css" href="css/public.css">
+        <link rel="stylesheet" type="text/css" href="css/showlist.css">
+        <script type = "text/javascript" src = "js/public.js"></script>
+        <script type = "text/javascript" src = "js/showlist.js"></script>
+        <script type = "text/javascript" src = "js/Data.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id = "user-go">
+        </div>
+        <div id = "login-go" class = "go">
+            <form onsubmit="return nic();">
+                <b> User name</b>
+                <br/>
+                <input id = "login_user" class = "content" type = "text" required/>
+                <br/>
+                <b> Password</b>
+                <br/>
+                <input id = "login_pass" class = "content" type = "password" required/>
+                <br/>
+                <a id = "reset" href = "#"> Forgot password?</a>
+                <input id = "acce" type = "submit" value = "Login"/>
+            </form>
+            <hr/>
+            <a class = "login-web" href = "#"><img src = "image/facebook-icon.svg"/><b> Login Facebook</b></a>
+            <a class = "login-web" href = "#"><img src = "image/google-icon.svg"/><b> Login Gmail</b></a>
+        </div>
+        <div id = "sigin-go" class = "go">
+            <form onsubmit = "return addnick();">
+                <b> Email</b>
+                <br/>
+                <input id = "sigin_gmail" class = "content" type = "email" required/>
+                <br/>
+                <b> User name</b>
+                <br/>
+                <input id = "sigin_user" class = "content" type = "text" required/>
+                <br/>
+                <b> Password</b>
+                <br/>
+                <input id = "sigin_pass" class = "content" type = "password" required/>
+                <br/>
+                <b> Tên người nhận hàng</b>
+                <br/>
+                <input id = "sigin_name" class = "content" type = "text" required/>
+                <br/>
+                <b> Số điện thoại</b>
+                <br/>
+                <input id = "sigin_phone" class = "content" type = "text" required/>
+                <br/>
+                <b> Địa chỉ nhận hàng</b>
+                <br/>
+                <textarea id = "sigin_ip" class = "content" rows = "4" required></textarea>
+                <br/>
+                <input id = "acce" type = "submit" value = "Sig in"/>
+            </form>
+            <hr/>
+            <a class = "login-web" href = "#"><img src = "image/facebook-icon.svg"/><b> Login Facebook</b></a>
+            <a class = "login-web" href = "#"><img src = "image/google-icon.svg"/><b> Login Gmail</b></a>
+        </div>
+        <div id = "body">
+            <header>
+                <div id = "pay">
+                    <a href = "#" onclick = "pag('pay');"><img src = "image/header-pay.png"/><center><h3 id = "chu"> Pay 0</h3></center></a>
+                </div>
+                <div id = "login-regis">
+                    <div id = "login">
+                        <a onclick = "loginnone()">
+                            <b> Login</b>
+                            <img src = "image/header-login.png"/>
+                        </a>
+                    </div>
+                    <div id = "regis">
+                        <a onclick = "siginnone()">
+                            <img src = "image/header-login.png"/>
+                            <b> Sig in</b>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div id = "menu-drop">
+                    <ul>
+                        <li id = "home"><a href = "#" onclick = "pag('home');"><img src = "image/nav-home.png" height="20px"/></a></li>
+                        <li >
+                            <a> Product<img id = "icon-drop" src = "image/nav-drop.png" height="20px"/></a>
+                            <ul id = "drop">
+                                <li><a href = "#" onclick = "pag('starter');"> Starter deck</a></li>
+                                <li><a href = "#" onclick = "pag('structure');"> Structure deck</a></li>
+                                <li><a href = "#" onclick = "pag('packbox');"> Pack & Box</a></li>
+                                <li><a href = "#" onclick = "pag('accessories');"> Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href = "#" onclick="pag('gameplay');"> Gameplay</a></li>
+                    </ul>
+                </div>
+                <div id = "search">
+                    <input type="text" name="search" placeholder="search">
+                    <img src = "image/search.png" height = "30px"/>
+                </div>                  
+            </nav>
+            <article>
+                <aside>
+                    <div id = "aside-one">
+                        <img src = "image/aside-two.jpg" width = "100%"/>
+                        <img src = "image/aside-one.jpg" width = "100%"/>
+                    </div>
+                </aside>
+                <section id = "section">
+                    <div id="showlist">
+                        <div id="show">
+                            <a href="#">
+                                <div class="product" align="center" onclick="input(00, 28);">
+                                    <img class="img-product" src="image/product/packbox/00.jpg">
+                                    <p class="name-product">Y01 - STAR PACK 2: 2014 (TCG)</p>
+                                    <p class="pay-product"> 35.000 vnd</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="product" align="center" onclick="input(01, 29);">
+                                    <img class="img-product" src="image/product/packbox/01.jpg">
+                                    <p class="name-product">Y12 - THE SECRET FORCES (TCG)</p>
+                                    <p class="pay-product"> 120.000 vnd</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="product" align="center" onclick="input(02, 30);">
+                                    <img class="img-product" src="image/product/packbox/02.jpg">
+                                    <p class="name-product">Y41 - NUMBER HUNTERS (TCG)</p>
+                                    <p class="pay-product"> 95.000 vnd</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="product" align="center" onclick="input(03, 31);">
+                                    <img class="img-product" src="image/product/packbox/03.jpg">
+                                    <p class="name-product">YG043 - THẺ BÀI YUGIOH THE INFINITY CHASERS</p>
+                                    <p class="pay-product"> 110.000 vnd</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="product" align="center" onclick="input(04, 32);">
+                                    <img class="img-product" src="image/product/packbox/04.jpg">
+                                    <p class="name-product">YG069 - THẺ BÀI YUGIOH TOON CHAOS CHÍNH HÃNG</p>
+                                    <p class="pay-product"> 130.000 vnd</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="product" align="center" onclick="input(05, 33);">
+                                    <img class="img-product" src="image/product/packbox/05.jpg">
+                                    <p class="name-product">YG055 - THẺ BÀI YUGIOH DARK NEOSTORM</p>
+                                    <p class="pay-product"> 110.000 vnd</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="product" align="center" onclick="input(06, 34);">
+                                    <img class="img-product" src="image/product/packbox/06.jpg">
+                                    <p class="name-product">Y58 - THẺ BÀI BREAKERS OF SHADOW (YU-GI-OH! - TCG)</p>
+                                    <p class="pay-product"> 115.000 vnd</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="product" align="center" onclick="input(07, 35);">
+                                    <img class="img-product" src="image/product/packbox/07.jpg">
+                                    <p class="name-product">YG015 - SPIRIT WARRIORS (YU-GI-OH! TCG)</p>
+                                    <p class="pay-product"> 110.000 vnd</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="product" align="center" onclick="input(08, 36);">
+                                    <img class="img-product" src="image/product/packbox/08.jpg">
+                                    <p class="name-product">YG026 - DARK SAVIORS (YU-GI-OH! TCG)</p>
+                                    <p class="pay-product"> 160.000 vnd</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="list">
+                            <ul>
+                                <li onclick="rise(0)">
+                                    <a href="#"> 1</a>
+                                </li>
+                                <li onclick="rise(1)">
+                                    <a href="#"> 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <footer>
+                <div id = "store">
+                    <img src = "image/icon.png" height = "70px"/>
+                    <h3> SmileH store</h3>
+                </div>
+                <div id = "infor">
+                    <div id = "phone">
+                        <img src = "image/footer-ip.png" height = "30px"/>
+                        <b> 424/39/8 tổ 4, khu phố 4, Phường Phú Hòa, Thành Phố Thủ Dầu Một, Bình Dương</b>
+                    </div>
+                    <div id = "phone">
+                        <img src = "image/footer-phone.png" height = "30px"/>
+                        <b> 0369430009</b>
+                    </div>
+                    <a id = "phone" href = "https://www.facebook.com/SmileLite1903/">
+                        <img src = "image/footer-facebook.png" height = "30px"/>
+                        <b> Phạm Thái Bảo</b>
+                    </a>
+                    <a id = "phone" href = "2024802050007@student.edu.vn">
+                        <img src = "image/footer-gmail.png" height = "30px"/>
+                        <b> 0369430009</b>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

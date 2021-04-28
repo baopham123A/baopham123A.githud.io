@@ -1,0 +1,90 @@
+#showlist #show {
+    margin: 5% auto 15px;
+    width: 780px;
+}
+
+#showlist #show .product {
+    display: inline-block;
+    margin: 0px 5px 10px;
+    height: 298px;
+    width: 247px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#showlist #show .product:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(200, 0, 0);
+}
+
+#showlist .product:hover .pay-product {
+    font-weight: bold;
+}
+
+#showlist .product>img {
+    width: 200px;
+    margin-top: 5px
+}
+
+#showlist .product p {
+    text-align: left;
+}
+
+#showlist a {
+    text-decoration: none;
+}
+
+#showlist .name-product {
+    color: black;
+    font-size: 17px;
+    margin-top: 5px;
+    white-space: break; 
+    width: 228px;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#showlist .pay-product {
+    color: red;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#showlist #list {
+    margin: 0px auto;
+    width: 48px;
+    margin-bottom: 5%;
+}
+
+#showlist #list li {
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: solid 1px black;
+}
+
+#showlist #list li:hover {
+    background-color: rgb(200, 0, 0);
+    cursor: pointer;
+}
+
+#showlist #list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+#showlist #list li:hover a {
+    color: white;
+}

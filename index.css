@@ -1,0 +1,118 @@
+#index {
+    margin: 5% auto 15px;
+    width: 800px;
+}
+
+#index .button {
+    position: absolute;
+    color: white;
+    text-align: center;
+    line-height: 342px;
+    z-index: 5;
+    height: 342px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#index .button:hover {
+    cursor: pointer;
+    background-color: black;
+    opacity: 0.8;
+}
+
+#index #back {
+    top: 287px;
+    left: 494px;
+}
+
+#index #next {
+    top: 287px;
+    right: 225px;
+}
+
+#index #background {
+    height: 342px;
+    width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+#index #background:hover, #next:hover, #back:hover {
+    box-shadow: 0px 0px 50px red;
+}
+
+#index #background img {
+    width: 800px;
+    position: absolute;
+    animation-duration: 0.5s;
+}
+
+#index #anh1 {
+    animation: slideright linear;
+}
+
+#index #anh2 {
+    animation: slideleft linear;
+}
+
+@keyframes slideright {
+    to {
+        left: -800px;
+    }
+    from {
+        left: 0px;
+    }
+}
+
+@keyframes slideleft {
+    to {
+        left: 0px;
+    }
+    from {
+        left: 800px;
+    }
+}
+
+#index #anh3 {
+    animation: slidel linear;
+}
+
+#index #anh4 {
+    animation: slider linear;
+}
+
+@keyframes slidel {
+    to {
+        left: 800px;
+    }
+    from {
+        left: 0px;
+    }
+}
+
+@keyframes slider {
+    to {
+        left: 0px;
+    }
+    from {
+        left: -800px;
+    }
+}
+
+#index h1 {
+    margin-top: 30px;
+}
+
+#index p {
+    margin-bottom: 5px;
+}
+
+#index a {
+    text-decoration: none;
+    color: blue;
+}
+
+#index a:hover {
+    color: purple;
+}

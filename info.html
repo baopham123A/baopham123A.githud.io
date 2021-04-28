@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> SmileH store</title>
+        <link rel="stylesheet" type="text/css" href="css/public.css">
+        <link rel="stylesheet" type="text/css" href="css/canhan.css">
+        <script type = "text/javascript" src = "js/public.js"></script>
+        <script type = "text/javascript" src = "js/canhan.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id = "user-go">
+        </div>
+        <div id = "login-go" class = "go">
+            <form onsubmit="return nic();">
+                <b> User name</b>
+                <br/>
+                <input id = "login_user" class = "content" type = "text" required/>
+                <br/>
+                <b> Password</b>
+                <br/>
+                <input id = "login_pass" class = "content" type = "password" required/>
+                <br/>
+                <a id = "reset" href = "#"> Forgot password?</a>
+                <input id = "acce" type = "submit" value = "Login"/>
+            </form>
+            <hr/>
+            <a class = "login-web" href = "#"><img src = "image/facebook-icon.svg"/><b> Login Facebook</b></a>
+            <a class = "login-web" href = "#"><img src = "image/google-icon.svg"/><b> Login Gmail</b></a>
+        </div>
+        <div id = "sigin-go" class = "go">
+            <form onsubmit = "return addnick();">
+                <b> Email</b>
+                <br/>
+                <input id = "sigin_gmail" class = "content" type = "email" required/>
+                <br/>
+                <b> User name</b>
+                <br/>
+                <input id = "sigin_user" class = "content" type = "text" required/>
+                <br/>
+                <b> Password</b>
+                <br/>
+                <input id = "sigin_pass" class = "content" type = "password" required/>
+                <br/>
+                <b> Tên người nhận hàng</b>
+                <br/>
+                <input id = "sigin_name" class = "content" type = "text" required/>
+                <br/>
+                <b> Số điện thoại</b>
+                <br/>
+                <input id = "sigin_phone" class = "content" type = "text" required/>
+                <br/>
+                <b> Địa chỉ nhận hàng</b>
+                <br/>
+                <textarea id = "sigin_ip" class = "content" rows = "4" required></textarea>
+                <br/>
+                <input id = "acce" type = "submit" value = "Sig in"/>
+            </form>
+            <hr/>
+            <a class = "login-web" href = "#"><img src = "image/facebook-icon.svg"/><b> Login Facebook</b></a>
+            <a class = "login-web" href = "#"><img src = "image/google-icon.svg"/><b> Login Gmail</b></a>
+        </div>
+        <div id = "body">
+            <header>
+                <div id = "pay">
+                    <a href = "#" onclick = "pag('pay');"><img src = "image/header-pay.png"/><center><h3 id = "chu"> Pay 0</h3></center></a>
+                </div>
+                <div id = "login-regis">
+                    <div id = "login">
+                        <a onclick = "loginnone()">
+                            <b> Login</b>
+                            <img src = "image/header-login.png"/>
+                        </a>
+                    </div>
+                    <div id = "regis">
+                        <a onclick = "siginnone()">
+                            <img src = "image/header-login.png"/>
+                            <b> Sig in</b>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div id = "menu-drop">
+                    <ul>
+                        <li id = "home"><a href = "#" onclick = "pag('home');"><img src = "image/nav-home.png" height="20px"/></a></li>
+                        <li >
+                            <a> Product<img id = "icon-drop" src = "image/nav-drop.png" height="20px"/></a>
+                            <ul id = "drop">
+                                <li><a href = "#" onclick = "pag('starter');"> Starter deck</a></li>
+                                <li><a href = "#" onclick = "pag('structure');"> Structure deck</a></li>
+                                <li><a href = "#" onclick = "pag('packbox');"> Pack & Box</a></li>
+                                <li><a href = "#" onclick = "pag('accessories');"> Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href = "#" onclick="pag('gameplay');"> Gameplay</a></li>
+                    </ul>
+                </div>
+                <div id = "search">
+                    <input type="text" name="search" placeholder="search">
+                    <img src = "image/search.png" height = "30px"/>
+                </div>                  
+            </nav>
+            <article>
+                <aside>
+                    <div id = "aside-one">
+                        <img src = "image/aside-two.jpg" width = "100%"/>
+                        <img src = "image/aside-one.jpg" width = "100%"/>
+                    </div>
+                </aside>
+                <section id = "section">
+                    <div id="canhan">
+                        <ul id="cnlist">
+                            <li> Thông tin</li>
+                        </ul>
+                        <div id="cn-info">
+                            <div>
+                                <p> gmail: nucuoi@gmail.com <span onclick="sua(0);"> sửa</span>
+                                </p>
+                                <p> Tên: Phạm Thái Bảo <span onclick="sua(1);"> sửa</span>
+                                </p>
+                                <p> Địa chỉ: 424/39/8 tổ 4, khu phố 4, Phường Phú Hòa, Thành Phố Thủ Dầu Một, Bình Dương <span onclick="sua(2);"> sửa</span>
+                                </p>
+                                <p> phone: 0369430009 <span onclick="sua(3);"> sửa</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <footer>
+                <div id = "store">
+                    <img src = "image/icon.png" height = "70px"/>
+                    <h3> SmileH store</h3>
+                </div>
+                <div id = "infor">
+                    <div id = "phone">
+                        <img src = "image/footer-ip.png" height = "30px"/>
+                        <b> 424/39/8 tổ 4, khu phố 4, Phường Phú Hòa, Thành Phố Thủ Dầu Một, Bình Dương</b>
+                    </div>
+                    <div id = "phone">
+                        <img src = "image/footer-phone.png" height = "30px"/>
+                        <b> 0369430009</b>
+                    </div>
+                    <a id = "phone" href = "https://www.facebook.com/SmileLite1903/">
+                        <img src = "image/footer-facebook.png" height = "30px"/>
+                        <b> Phạm Thái Bảo</b>
+                    </a>
+                    <a id = "phone" href = "2024802050007@student.edu.vn">
+                        <img src = "image/footer-gmail.png" height = "30px"/>
+                        <b> 0369430009</b>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,187 @@
+#singer #product {
+    margin: 4% auto;
+    width: 750px;
+    border: solid 5px rgb(200, 0, 0);
+    border-radius: 30px;
+}
+
+#singer #img-product {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 300px;
+}
+#singer #product #porduct-show {
+    margin-right: 25px;
+    float: right;
+    height: 300px;
+    margin-top: 25px;
+    width: 52%;
+}
+
+#singer #name-product {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#singer #pay-product {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#singer #number {
+    float: left;
+    text-align: center;
+    line-height: 36px;
+    display: block;
+    height: 36px;
+    width: 60px;
+    border: solid 2px rgb(169, 169, 169);
+}
+
+#singer .change {
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    display: block;
+    background-color: rgb(169, 169, 169);
+    height: 40px;
+    width: 40px;
+}
+
+#singer .change:hover {
+    cursor: pointer;
+}
+
+#singer #pay-pro {
+    float: left;
+    width: 70%;
+    height: 50px;
+    margin-top: 25px;
+    line-height: 50px;
+    text-align: center;
+    border: solid 2px rgb(255, 255, 255);
+}
+
+#singer #pay-color {
+    display: block;
+    position: relative;
+    right: 2px;
+    bottom: 2px;
+    width: 0%;
+    height: 50px;
+    background-color: red;
+    border: solid white 2px;
+    transition: 0.5s;
+}
+
+#singer #pay-text {
+    display: block;
+    position: relative;
+    border: solid 2px red;
+    right: 2px;
+    bottom: 71px;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+}
+
+#singer #pay-pro:hover {
+    cursor: pointer;
+}
+
+#singer #pay-pro:hover #pay-color {
+    width: 100%;
+}
+
+#singer #pay-pro:hover #pay-text {
+    width: 100%;
+    color: white;
+}
+
+#singer #in {
+    margin: 25px;  
+}
+
+#singer #in b {
+    font-size: 35px; 
+}
+
+#singer #in #inf-show {
+    margin-top: 10px;
+    height: 100px;
+    overflow: hidden;
+    font-size: 20px;
+    border-left: 1px yellow solid;
+    border-right: 1px yellow solid;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#singer #in #inf {
+    padding: 10px;
+    background-color: rgb(255, 255, 100);
+    border-radius: 25px;
+}
+
+#singer #in ul li {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+#singer #in p, #singer #in img, #singer #in b {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    word-wrap: break-word;
+    z-index: 1;
+}
+#singer #in b {
+    color: blue;
+    font-size: 25px;
+}
+
+
+#singer #in img {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+}
+
+#singer #in h2 {
+    background-color: rgb(92, 92, 92);
+    color: white;
+    line-height: 40px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 40px;
+    text-align: center;
+}
+
+#singer #in h2:hover {
+    cursor: pointer;
+    color: yellow;
+}
+
+hr {
+    margin: auto;
+    width: 700px;
+    height: 5px;
+    background-color: red;
+}
+
+#showlist b {
+    color: white;
+    margin: 4% auto;
+    width: 800px;
+    background-color: rgb(200, 0, 0);
+    border-radius: 25px;
+    display: block;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+}

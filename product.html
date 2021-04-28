@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> SmileH store</title>
+        <link rel="stylesheet" type="text/css" href="css/public.css">
+        <link rel="stylesheet" type="text/css" href="css/showlist.css">
+        <link rel="stylesheet" type="text/css" href="css/product.css">
+        <script type = "text/javascript" src = "js/public.js"></script>
+        <script type = "text/javascript" src = "js/product.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id = "user-go">
+        </div>
+        <div id = "login-go" class = "go">
+            <form onsubmit="return nic();">
+                <b> User name</b>
+                <br/>
+                <input id = "login_user" class = "content" type = "text" required/>
+                <br/>
+                <b> Password</b>
+                <br/>
+                <input id = "login_pass" class = "content" type = "password" required/>
+                <br/>
+                <a id = "reset" href = "#"> Forgot password?</a>
+                <input id = "acce" type = "submit" value = "Login"/>
+            </form>
+            <hr/>
+            <a class = "login-web" href = "#"><img src = "image/facebook-icon.svg"/><b> Login Facebook</b></a>
+            <a class = "login-web" href = "#"><img src = "image/google-icon.svg"/><b> Login Gmail</b></a>
+        </div>
+        <div id = "sigin-go" class = "go">
+            <form onsubmit = "return addnick();">
+                <b> Email</b>
+                <br/>
+                <input id = "sigin_gmail" class = "content" type = "email" required/>
+                <br/>
+                <b> User name</b>
+                <br/>
+                <input id = "sigin_user" class = "content" type = "text" required/>
+                <br/>
+                <b> Password</b>
+                <br/>
+                <input id = "sigin_pass" class = "content" type = "password" required/>
+                <br/>
+                <b> Tên người nhận hàng</b>
+                <br/>
+                <input id = "sigin_name" class = "content" type = "text" required/>
+                <br/>
+                <b> Số điện thoại</b>
+                <br/>
+                <input id = "sigin_phone" class = "content" type = "text" required/>
+                <br/>
+                <b> Địa chỉ nhận hàng</b>
+                <br/>
+                <textarea id = "sigin_ip" class = "content" rows = "4" required></textarea>
+                <br/>
+                <input id = "acce" type = "submit" value = "Sig in"/>
+            </form>
+            <hr/>
+            <a class = "login-web" href = "#"><img src = "image/facebook-icon.svg"/><b> Login Facebook</b></a>
+            <a class = "login-web" href = "#"><img src = "image/google-icon.svg"/><b> Login Gmail</b></a>
+        </div>
+        <div id = "body">
+            <header>
+                <div id = "pay">
+                    <a href = "#" onclick = "pag('pay');"><img src = "image/header-pay.png"/><center><h3 id = "chu"> Pay 0</h3></center></a>
+                </div>
+                <div id = "login-regis">
+                    <div id = "login">
+                        <a onclick = "loginnone()">
+                            <b> Login</b>
+                            <img src = "image/header-login.png"/>
+                        </a>
+                    </div>
+                    <div id = "regis">
+                        <a onclick = "siginnone()">
+                            <img src = "image/header-login.png"/>
+                            <b> Sig in</b>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div id = "menu-drop">
+                    <ul>
+                        <li id = "home"><a href = "#" onclick = "pag('home');"><img src = "image/nav-home.png" height="20px"/></a></li>
+                        <li >
+                            <a> Product<img id = "icon-drop" src = "image/nav-drop.png" height="20px"/></a>
+                            <ul id = "drop">
+                                <li><a href = "#" onclick = "pag('starter');"> Starter deck</a></li>
+                                <li><a href = "#" onclick = "pag('structure');"> Structure deck</a></li>
+                                <li><a href = "#" onclick = "pag('packbox');"> Pack & Box</a></li>
+                                <li><a href = "#" onclick = "pag('accessories');"> Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href = "#" onclick="pag('gameplay');"> Gameplay</a></li>
+                    </ul>
+                </div>
+                <div id = "search">
+                    <input type="text" name="search" placeholder="search">
+                    <img src = "image/search.png" height = "30px"/>
+                </div>                  
+            </nav>
+            <article>
+                <aside>
+                    <div id = "aside-one">
+                        <img src = "image/aside-two.jpg" width = "100%"/>
+                        <img src = "image/aside-one.jpg" width = "100%"/>
+                    </div>
+                </aside>
+                <section id = "section">
+                    <div id="singer">
+                        <div id="product">
+                            <img id="img-product" src="image/product/starter/00.jpg">
+                            <div id="porduct-show">
+                                <p id="name-product"> Y22 - DARK LEGION STARTER DECK (TCG)</p>
+                                <p id="pay-product"> Giá: 380.000 vnd</p>
+                                <b class="change" onclick="gt(0);"> -</b>
+                                <b id="number">1</b>
+                                <b class="change" onclick="gt(1);"> +</b>
+                                <b id="pay-pro" onclick="add(00, 0);">
+                                    <b id="pay-color"></b>
+                                    <b id="pay-text"> Thêm vào giỏ hàng</b>
+                                </b>
+                            </div>
+                            <div id="in">
+                                <b> Thông tin sản phẩm</b>
+                                <div id="inf-show">
+                                    <ul id="inf">
+                                        <li> Sản phẩm Dark Legion Starter Deck (Yu-Gi-Oh! TCG).</li>
+                                        <li> Gồm bộ bài 41 thẻ bài theo chủ đề Dark của nhân vật Declan (35 thẻ thường, 5 thẻ Shatterfoil, 1 thẻ Secret Rare), sách hướng dẫn, thảm chơi bài.</li>
+                                        <li> Hàng chính hãng do Konami sản xuất và phân phối.</li>
+                                        <li> In và đóng gói tại Mỹ. (ngôn ngữ tiếng Anh)</li>
+                                        <li> Độ tuổi phù hợp: Trên 6 tuổi</li>
+                                    </ul>
+                                    <p> Yu-Gi-Oh! Trading Card Game là một game đấu bài của Nhật Bản được hãng Konami phát triển và phát hành. Nó dựa trên trò chơi Duel Monsters do họa sĩ manga Kazuki Takahashi tạo ra. Đây cũng là phần cốt truyện chính, hấp dẫn nhất trong loạt truyện tranh Yu-Gi-Oh! của ông. Bộ truyện này cũng đã vô cùng quen thuộc và chiếm được trái tim của hàng triệu người Việt Nam.</p>
+                                    <p> Trò chơi lần đầu tiên được Konami bán ra vào năm 1999. Nó đã đạt kỷ lục là Trading Card Game (TCG) bán chạy nhất Thế Giới theo ghi nhận của Guinness World Record vào ngày 7 tháng 7, 2009 với hơn 22 tỷ thẻ bài đã được bán ra toàn cầu. Tính tới 31/03/2011, Konami đã bán được hơn 25 tỷ thẻ bài. Yu-Gi-Oh! Trading Card Game tiếp tục nổi tiếng và phổ biến sâu rộng hơn nữa khắp thế giới. Thêm nhiều series bài, luật phụ được đưa vào game, xây dựng nó lớn mạnh hơn với nhiều giải đấu quốc tế được tổ chức khắp nơi.</p>
+                                    <img src="image/data/1/dark_legion_starter_deck_tcg_grande.jpg">
+                                    <img src="image/data/1/dark_legion_starter_deck_tcg_nshop_grande.jpg">
+                                    <img src="image/data/1/dark_legion_starter_deck_tcg_vietnam_grande.jpg">
+                                    <img src="image/data/1/shop_ban_dark_legion_starter_deck_tcg_grande.jpg">
+                                </div>
+                                    <h2 id="showadd" onclick="keo();"> Xem thêm</h2>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="showlist">
+                            <b> Một số sản phẩm liên quan</b>
+                            <div id="show">
+                                <a href="#">
+                                    <div class="product" align="center" onclick="input(7, 7);">
+                                        <img class="img-product" src="image/product/starter/07.jpg">
+                                        <p class="name-product">Y06 - YUGI RELOADED STARTER DECK (TCG)</p>
+                                        <p class="pay-product"> 520.000 vnd</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="product" align="center" onclick="input(6, 6);">
+                                        <img class="img-product" src="image/product/starter/06.jpg">
+                                        <p class="name-product">YG006 - STARTER DECK: LINK STRIKE (YU-GI-OH! TCG)</p>
+                                        <p class="pay-product"> 480.000 vnd</p>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="product" align="center" onclick="input(2, 2);">
+                                        <img class="img-product" src="image/product/starter/02.jpg">
+                                        <p class="name-product">YG046 - BỘ BÀI YUGIOH SPEED DUEL STARTER DECKS: DUELISTS OF TOMORROW</p>
+                                        <p class="pay-product"> 460.000 vnd</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <footer>
+                <div id = "store">
+                    <img src = "image/icon.png" height = "70px"/>
+                    <h3> SmileH store</h3>
+                </div>
+                <div id = "infor">
+                    <div id = "phone">
+                        <img src = "image/footer-ip.png" height = "30px"/>
+                        <b> 424/39/8 tổ 4, khu phố 4, Phường Phú Hòa, Thành Phố Thủ Dầu Một, Bình Dương</b>
+                    </div>
+                    <div id = "phone">
+                        <img src = "image/footer-phone.png" height = "30px"/>
+                        <b> 0369430009</b>
+                    </div>
+                    <a id = "phone" href = "https://www.facebook.com/SmileLite1903/">
+                        <img src = "image/footer-facebook.png" height = "30px"/>
+                        <b> Phạm Thái Bảo</b>
+                    </a>
+                    <a id = "phone" href = "2024802050007@student.edu.vn">
+                        <img src = "image/footer-gmail.png" height = "30px"/>
+                        <b> 0369430009</b>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

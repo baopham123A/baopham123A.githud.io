@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> SmileH store</title>
+        <link rel="stylesheet" type="text/css" href="css/public.css">
+        <link rel="stylesheet" type="text/css" href="css/gameplay.css">
+        <script type = "text/javascript" src = "js/public.js"></script>
+        <script type = "text/javascript" src = "js/gameplay.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id = "user-go">
+        </div>
+        <div id = "login-go" class = "go">
+            <form onsubmit="return nic();">
+                <b> User name</b>
+                <br/>
+                <input id = "login_user" class = "content" type = "text" required/>
+                <br/>
+                <b> Password</b>
+                <br/>
+                <input id = "login_pass" class = "content" type = "password" required/>
+                <br/>
+                <a id = "reset" href = "#"> Forgot password?</a>
+                <input id = "acce" type = "submit" value = "Login"/>
+            </form>
+            <hr/>
+            <a class = "login-web" href = "#"><img src = "image/facebook-icon.svg"/><b> Login Facebook</b></a>
+            <a class = "login-web" href = "#"><img src = "image/google-icon.svg"/><b> Login Gmail</b></a>
+        </div>
+        <div id = "sigin-go" class = "go">
+            <form onsubmit = "return addnick();">
+                <b> Email</b>
+                <br/>
+                <input id = "sigin_gmail" class = "content" type = "email" required/>
+                <br/>
+                <b> User name</b>
+                <br/>
+                <input id = "sigin_user" class = "content" type = "text" required/>
+                <br/>
+                <b> Password</b>
+                <br/>
+                <input id = "sigin_pass" class = "content" type = "password" required/>
+                <br/>
+                <b> Tên người nhận hàng</b>
+                <br/>
+                <input id = "sigin_name" class = "content" type = "text" required/>
+                <br/>
+                <b> Số điện thoại</b>
+                <br/>
+                <input id = "sigin_phone" class = "content" type = "text" required/>
+                <br/>
+                <b> Địa chỉ nhận hàng</b>
+                <br/>
+                <textarea id = "sigin_ip" class = "content" rows = "4" required></textarea>
+                <br/>
+                <input id = "acce" type = "submit" value = "Sig in"/>
+            </form>
+            <hr/>
+            <a class = "login-web" href = "#"><img src = "image/facebook-icon.svg"/><b> Login Facebook</b></a>
+            <a class = "login-web" href = "#"><img src = "image/google-icon.svg"/><b> Login Gmail</b></a>
+        </div>
+        <div id = "body">
+            <header>
+                <div id = "pay">
+                    <a href = "#" onclick = "pag('pay');"><img src = "image/header-pay.png"/><center><h3 id = "chu"> Pay 0</h3></center></a>
+                </div>
+                <div id = "login-regis">
+                    <div id = "login">
+                        <a onclick = "loginnone()">
+                            <b> Login</b>
+                            <img src = "image/header-login.png"/>
+                        </a>
+                    </div>
+                    <div id = "regis">
+                        <a onclick = "siginnone()">
+                            <img src = "image/header-login.png"/>
+                            <b> Sig in</b>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div id = "menu-drop">
+                    <ul>
+                        <li id = "home"><a href = "#" onclick = "pag('home');"><img src = "image/nav-home.png" height="20px"/></a></li>
+                        <li >
+                            <a> Product<img id = "icon-drop" src = "image/nav-drop.png" height="20px"/></a>
+                            <ul id = "drop">
+                                <li><a href = "#" onclick = "pag('starter');"> Starter deck</a></li>
+                                <li><a href = "#" onclick = "pag('structure');"> Structure deck</a></li>
+                                <li><a href = "#" onclick = "pag('packbox');"> Pack & Box</a></li>
+                                <li><a href = "#" onclick = "pag('accessories');"> Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href = "#" onclick="pag('gameplay');"> Gameplay</a></li>
+                    </ul>
+                </div>
+                <div id = "search">
+                    <input type="text" name="search" placeholder="search">
+                    <img src = "image/search.png" height = "30px"/>
+                </div>                  
+            </nav>
+            <article>
+                <aside>
+                    <div id = "aside-one">
+                        <img src = "image/aside-two.jpg" width = "100%"/>
+                        <img src = "image/aside-one.jpg" width = "100%"/>
+                    </div>
+                </aside>
+                <section id = "section">
+                    <div id="gameplay">
+                        <h1> Gameplay</h1>
+                        <h3> Mục tiêu</h3>
+                        <p> Mỗi trận đấu bài Yugioh sẽ trải qua 3 ván đấu. Người nào dành chiến thắng đa số   ván đấu ( thắng 3/3 hay ⅔ ) sẽ là người chiến thắng cuối cùng. </p>
+                        <p> Mỗi ván đầu, mỗi người chơi sẽ bắt đầu với 8000 Life Point / Điểm sống. Người chơi chiến thắng dành chiến thắng một ván đấu nếu như:</p>
+                        <ul>
+                            <li> Trừ hết điểm Life Point của Đối thử về 0.</li>
+                            <li> Tại thời điểm cần phải Rút bài, đối thủ của bạn không thể Rút được quân bài nào do hết bài rút.</li>
+                            <li> Do kết quả của một lá bài nào đó mà bị xử thua.</li>
+                        </ul>
+                        <h3> Chuẩn bị trước khi chơi</h3>
+                        <p> Người chơi cần tiến hành các bước cần thiết sau đây:</p>
+                        <ul class="ul">
+                            <li class="li"> Xáo trộn Bộ bài Chính của mình cũng như của Đối thủ.</li>
+                            <li class="li"> Đặt tất các các Bộ bài úp xuống khu vực của chúng trên Bàn chơi.</li>
+                            <li class="li">Người chơi đưa ra cho Đối thủ xem Bộ bài Bên ngoài của mình và đếm tất cả số lá bài trong mỗi bộ bài ( làm căn cứ để đảm bảo các bộ bài của các ván đấu là bằng nhau).</li>
+                            <li class="li">Nếu đây là ván đấu đầu tiên trong trận đấu, tiến hành trò chơi tung đồng xu hoặc kéo bua bao, để quyết định ai là người chơi đi trước. Nếu là các ván thứ 2, thứ 3, người thua cuộc của ván trước được quyền quyết định.</li>
+                            <li class="li">Mỗi người chơi tiến hành rút 5 lá bài từ bộ Bài chính và Bắt đầu ván chơi thôi nào!</li>
+                        </ul>
+                        <h3> Cách chơi một vàn bài Yugioh</h3>
+                        <p> Yugioh là một trò chơi đánh bài theo lượt. Hai người chơi sẽ lần lượt tiến hành lượt chơi của mình cho đến khi có một người chơi dành chiến thắng. Mỗi lượt chơi được chia thành 6 Giai đoạn (Phase) theo thứ tự như sau:</p>
+                        <p> 1. Draw Phase: Giai đoạn Rút bài</p>
+                        <p> 2. Standby Phase: Giai đoạn Chờ</p>
+                        <p> 3. Main Phase 1: Giai đoạn Chính 1 và Main Phase 2: Giai đoạn Chính 2</p>
+                        <p> 4. Battle Phase:  Giai đoạn Chiến đấu</p>
+                        <p> 6. End Phase: Giai đoạn Kết thúc</p>
+                    </div>
+                </section>
+            </article>
+            <footer>
+                <div id = "store">
+                    <img src = "image/icon.png" height = "70px"/>
+                    <h3> SmileH store</h3>
+                </div>
+                <div id = "infor">
+                    <div id = "phone">
+                        <img src = "image/footer-ip.png" height = "30px"/>
+                        <b> 424/39/8 tổ 4, khu phố 4, Phường Phú Hòa, Thành Phố Thủ Dầu Một, Bình Dương</b>
+                    </div>
+                    <div id = "phone">
+                        <img src = "image/footer-phone.png" height = "30px"/>
+                        <b> 0369430009</b>
+                    </div>
+                    <a id = "phone" href = "https://www.facebook.com/SmileLite1903/">
+                        <img src = "image/footer-facebook.png" height = "30px"/>
+                        <b> Phạm Thái Bảo</b>
+                    </a>
+                    <a id = "phone" href = "2024802050007@student.edu.vn">
+                        <img src = "image/footer-gmail.png" height = "30px"/>
+                        <b> 0369430009</b>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

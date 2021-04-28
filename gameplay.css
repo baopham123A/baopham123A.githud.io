@@ -1,0 +1,82 @@
+#gameplay {
+    width: 90%;
+    margin: 4%;
+}
+
+#gameplay .gameplay a {
+    margin-left: 7%;
+    margin-bottom: 4%;
+    float: left;
+    color: black;
+    background-color: white;
+    border: 2px solid red;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: block;
+    text-decoration: none;
+    width: 25%;
+    height: 250px;
+    transition: 0.2s;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px rgb(80, 80, 80);
+}
+
+#gameplay .gameplay a:hover {
+    border-color: white;
+    color: white;
+    box-shadow: 0px 0px 0px;
+}
+
+#gameplay .gameplay a:hover img {
+    transform: scale(2);
+}
+
+#gameplay .gameplay img {
+    margin-top: 15%;
+    margin-left: 15%;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+#gameplay .gameplay h3 {
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+#gameplay .anh {
+    display: inline-block;
+    height: 180px;
+    width: 150px;
+    text-align: center;
+}
+
+#gameplay .anh>img {
+    height: 150px;
+    width: 150px;
+}
+
+#gameplay #album {
+    margin: auto;
+    width: 460px;
+}
+
+#gameplay .ul {
+    margin-left: 50px;
+}
+
+#gameplay .li {
+    margin-bottom: 15px;
+}
+
+#gameplay h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#gameplay p, b, h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
